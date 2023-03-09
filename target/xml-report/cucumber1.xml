@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.693">
+    <testcase classname="US 12 Test Case 3" name="US 12 Test Case 3" time="14.438">
+        <system-out><![CDATA[Given user goes to home page................................................passed
+And user clicks on the contact button.......................................passed
+Then user sees he social media icons on the contact page....................passed
+]]></system-out>
+    </testcase>
+</testsuite>
