@@ -28,6 +28,9 @@ public class Trendlifepages {
     public WebElement dropBoxClick;
     @FindBy (xpath = "(//div[@tabindex='0'])[2]")
     public WebElement dropBoxC;
+    //li[@data-value='2']
+    @FindBy (xpath = "//li[text()='Customer']")
+    public WebElement optionCustomer;
 
     @FindBy (xpath = "//li[text()='Customer']")
     public WebElement dropBoxCustomer;

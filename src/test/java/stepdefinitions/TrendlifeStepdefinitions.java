@@ -50,24 +50,25 @@ public class TrendlifeStepdefinitions {
         ReusableMethods.pleaseWait(2);
         page.nameTextbox.sendKeys(ConfigReader.getProperty("name"));
         page.emailTextbox.sendKeys(ConfigReader.getProperty("contactSendMessageEmail"));
-        ReusableMethods.pleaseWait(1);
+        ReusableMethods.pleaseWait(2);
         //actions.keyDown(Keys.ARROW_DOWN).perform();
-        ReusableMethods.pleaseWait(1);
+        ReusableMethods.pleaseWait(2);
         //actions.keyUp(Keys.ARROW_DOWN).perform();
         Select select= new Select(page.dropBoxClick);
-        ReusableMethods.pleaseWait(1);
-        //page.dropBoxC.click();
-        ReusableMethods.pleaseWait(1);
+        ReusableMethods.pleaseWait(2);
+       // page.dropBoxC.click();
+        ReusableMethods.pleaseWait(2);
         //select.selectByVisibleText("Customer");
-
-
         //page.dropBoxCustomer.click();
         page.textArea.sendKeys(ConfigReader.getProperty("messageText"));
         ReusableMethods.pleaseWait(4);
         page.dropBoxC.click();
+        ReusableMethods.pleaseWait(4);
+        page.optionCustomer.click();
+       // select.selectByValue("2");
 
-        //select.selectByValue("2");
-        select.selectByVisibleText("Customer");
+        //select.selectByVisibleText("Customer");
+        actions.moveToElement(page.optionCustomer).click().perform();
 
     }
      @Then("user sees that the message was sent successfully")

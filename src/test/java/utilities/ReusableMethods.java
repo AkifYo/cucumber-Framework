@@ -144,4 +144,14 @@ public class ReusableMethods {
 
         return element;
     }
+    public static void userLogin(String mail, String password) {
+
+        Driver.getDriver().get("https://qa.trendlifebuy.com/");
+        Driver.getDriver().findElement(By.xpath("(//*[text()=\"Login\"])[1]")).click();
+        Driver.getDriver().findElement(By.xpath("(//input[@class=\"primary_input3 radius_5px\"])[1]\n")).sendKeys(mail);
+        Driver.getDriver().findElement(By.xpath("(//input[@class=\"primary_input3 radius_5px\"])[2]\n")).sendKeys(password);
+        Driver.getDriver().findElement(By.xpath("(//button[text()=\"Sign In\"])[1]")).click();
+
+    }
 }
+
