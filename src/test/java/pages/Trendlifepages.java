@@ -50,10 +50,10 @@ public class Trendlifepages {
     @FindBy (xpath = "//a[@href='https://www.instagram.com']")
     public WebElement instagramIcon;
     // user login button
-    @FindBy (xpath = "(//a[text()='Login'])[2]")
+    @FindBy (xpath = "//span//a[@href='https://qa.trendlifebuy.com/login']")
     public WebElement userLoginButton;
     //mail textbox
-    @FindBy (xpath = "//a[text()='Login']")
+    @FindBy (xpath = "//input[@name='login']")
     public WebElement userMailTextbox;
     //password textbox
     @FindBy (xpath = "//input[@id='password']")
@@ -64,8 +64,10 @@ public class Trendlifepages {
     @FindBy (xpath = "//a[text()='Dashboard']")
     public WebElement userDashboardButton;
 
-    @FindBy (xpath = "//a[text()='My Order']")
+    @FindBy (xpath = "(//a[@class='position-relative d-flex align-items-center'])[3]")
     public WebElement myOrderButton;
+    //a[@href='https://qa.trendlifebuy.com/my-purchase-orders'])[2]
+    //div[@class='dashboard_sidebar_menuList']//ul//li[4]
 
     // order id text
     @FindBy (xpath = "//h4[text()='Order ID:  ']")

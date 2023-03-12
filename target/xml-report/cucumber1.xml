@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.844">
-    <testcase classname="US 12 Test Case 3" name="US 12 Test Case 3" time="16.57">
-        <system-out><![CDATA[Given user goes to home page................................................passed
-And user clicks on the contact button.......................................passed
-Then user sees he social media icons on the contact page....................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.333">
+    <testcase classname="US 18 Test Case 01" name=": US 18 Test Case 01" time="35.051">
+        <failure message="element click intercepted: Element is not clickable at point (219, 891)&#10;  (Session info: chrome=110.0.5481.180)&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [eb965d08ce6960ec9dfbc1b6b7e23780, clickElement {id=02849d28-3317-41fc-bdfe-7af435762c9e}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52569}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52569/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (eb965d08ce6960ec9dfbc1b6b7e23780)] -&gt; xpath: //div[@class='dashboard_sidebar_menuList']//ul//li[4]]&#10;Session ID: eb965d08ce6960ec9dfbc1b6b7e23780" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given user goes to home page................................................passed
+And user clicks to the login button.........................................passed
+And user  enters her "akyor06@hotmail.com" and "Ak233134."  and clicks sign in button.passed
+And user selects the DASHBOARD button.......................................passed
+Then user clicks the my order button........................................failed
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (219, 891)
+  (Session info: chrome=110.0.5481.180)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb965d08ce6960ec9dfbc1b6b7e23780, clickElement {id=02849d28-3317-41fc-bdfe-7af435762c9e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52569}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52569/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (eb965d08ce6960ec9dfbc1b6b7e23780)] -> xpath: //div[@class='dashboard_sidebar_menuList']//ul//li[4]]
+Session ID: eb965d08ce6960ec9dfbc1b6b7e23780
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at stepdefinitions.TrendlifeStepdefinitions.userClicksTheMyOrderButton(TrendlifeStepdefinitions.java:127)
+	at ✽.user clicks the my order button(file:///C:/Users/Lenovo%20X270/IdeaProjects/com.trendlifebuy.com-1/src/test/resources/features/US18_TestCase1.feature:10)
+]]></failure>
     </testcase>
 </testsuite>

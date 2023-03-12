@@ -99,8 +99,12 @@ public class TrendlifeStepdefinitions {
 
     @And("user  enters her {string} and {string}  and clicks sign in button")
     public void userEntersHerAndAndClicksSignInButton(String userMail, String userPassword) {
+        page.userMailTextbox.click();
+        ReusableMethods.pleaseWait(1);
         page.userMailTextbox.sendKeys(userMail);
         ReusableMethods.pleaseWait(2);
+        page.userMailTextbox.click();
+        ReusableMethods.pleaseWait(1);
         page.userPasswordTextbox.sendKeys(userPassword);
         ReusableMethods.pleaseWait(2);
         page.signInButton.click();
@@ -115,7 +119,13 @@ public class TrendlifeStepdefinitions {
 
     @Then("user clicks the my order button")
     public void userClicksTheMyOrderButton() {
-        page.myOrderButton.click();
+        ReusableMethods.pleaseWait(2);
+        actions.keyDown(Keys.ARROW_DOWN).perform();
+        actions.keyDown(Keys.ARROW_DOWN).perform();
+        actions.keyDown(Keys.ARROW_DOWN).perform();
+    ReusableMethods.pleaseWait(2);
+    page.myOrderButton.click();
+       // actions.moveToElement(page.myOrderButton).click().perform();
     }
 }
 
