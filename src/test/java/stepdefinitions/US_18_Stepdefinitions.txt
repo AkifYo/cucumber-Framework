@@ -1,0 +1,18 @@
+1- User navigates main page of the site
+2- user clicks to the login button
+3- user  enters her email and password  and clicks sign in button
+4- user selects the DASHBOARD button
+5-user clicks the my order button
+**************
+6- user clicks the order details button
+7- user can see he Order ID, Status, Order date, Order Amount, Package, Price, Shipping Info, Billing Info, Payment Info
+*******************
+8-user can see Pending, Processing, Shipped, Recieved, Delivered stages related to the relevant order process
+*******************
+9-user can see what he meaning of Pending, Processing, Shipped, Recieved, Delivered stages related to the relevant order process
+************************
+10-user clicks the cancel order button and Slect cancel screen appears
+**************
+11-user selects a reason and sends it with clicking the send button
+****************
+12-user can access the shipping billing and payment info

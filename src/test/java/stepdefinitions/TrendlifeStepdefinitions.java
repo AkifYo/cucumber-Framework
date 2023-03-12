@@ -88,5 +88,34 @@ public class TrendlifeStepdefinitions {
         Assert.assertTrue(page.linkedinIcon.isDisplayed());
         Assert.assertTrue(page.instagramIcon.isDisplayed());
     }
+    //US_18
+
+    @And("user clicks to the login button")
+    public void userClicksToTheLoginButton() {
+        page.userLoginButton.click();
+        ReusableMethods.pleaseWait(2);
+
+    }
+
+    @And("user  enters her {string} and {string}  and clicks sign in button")
+    public void userEntersHerAndAndClicksSignInButton(String userMail, String userPassword) {
+        page.userMailTextbox.sendKeys(userMail);
+        ReusableMethods.pleaseWait(2);
+        page.userPasswordTextbox.sendKeys(userPassword);
+        ReusableMethods.pleaseWait(2);
+        page.signInButton.click();
+        ReusableMethods.pleaseWait(2);
+    }
+
+    @And("user selects the DASHBOARD button")
+    public void userSelectsTheDASHBOARDButton() {
+        page.userDashboardButton.click();
+        ReusableMethods.pleaseWait(2);
+    }
+
+    @Then("user clicks the my order button")
+    public void userClicksTheMyOrderButton() {
+        page.myOrderButton.click();
+    }
 }
 

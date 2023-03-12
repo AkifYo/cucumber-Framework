@@ -50,7 +50,7 @@ public class Trendlifepages {
     @FindBy (xpath = "//a[@href='https://www.instagram.com']")
     public WebElement instagramIcon;
     // user login button
-    @FindBy (xpath = "//a[text()='Login']")
+    @FindBy (xpath = "(//a[text()='Login'])[2]")
     public WebElement userLoginButton;
     //mail textbox
     @FindBy (xpath = "//a[text()='Login']")
