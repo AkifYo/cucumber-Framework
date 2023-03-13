@@ -1,6 +1,8 @@
-Feature: US 18 Test Case 02
-  @now
-Scenario Outline: US 18 Test Case 02
+Feature: US 18 Test Case 04
+  #On the Order Details page, verify that
+  # the texts containing the descriptions of the Pending, Processing, Shipped, Recieved, Delivered stages are visible.
+
+Scenario Outline: US 18 Test Case 04
 Given user goes to home page
 And user clicks to the login button
 And user  enters her "<email>" and "<password>"  and clicks sign in button
